@@ -15,7 +15,8 @@
             <classpath refid="compile.classpath"/>
         </javac>
     </target>
-    <target name="checkstyle">
+    <!-- This is a demo text-->
+	<target name="checkstyle">
         <checkstyle config="sun_checks.xml" failOnViolation="false"> 
             <fileset dir="src/example" includes="**/*.java"/>
             <formatter type="xml" toFile="checkstyle_errors.xml"/>
